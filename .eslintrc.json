@@ -1,6 +1,20 @@
 {
+  "root": true,
   "extends": [
+    "next",
     "next/core-web-vitals",
-    "next/typescript"
-  ]
+    "next/typescript",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
+    // Your custom rules
+  }
 }

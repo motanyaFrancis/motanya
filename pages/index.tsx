@@ -42,6 +42,7 @@ import {
   FiToggleLeft,
   FiTrendingUp,
   FiUserPlus,
+  FiClipboard,
 } from "react-icons/fi";
 import { Features } from "components/features";
 import { BackgroundGradient } from "components/gradients/background-gradient";
@@ -97,15 +98,16 @@ const HeroSection: React.FC = () => {
             px="0"
             title={
               <FallInPlace>
-                Build beautiful
-                <Br /> software faster
+                Transform Your
+                <Br />Vision into Reality
               </FallInPlace>
             }
             description={
               <FallInPlace delay={0.4} fontWeight="medium">
-                Saas UI is a <Em>React component library</Em>
-                <Br /> that doesn&apos;t get in your way and helps you <Br />{" "}
-                build intuitive SaaS products with speed.
+                Discover the power of <Em>exceptional design with Motanya Creative Design</Em>. We create visually captivating websites 
+                <Br /> and graphics that resonate with your audience and set <Br /> your brand apart.
+
+
               </FallInPlace>
             }
           >
@@ -115,8 +117,8 @@ const HeroSection: React.FC = () => {
               </HStack>
 
               <ButtonGroup spacing={4} alignItems="center">
-                <ButtonLink colorScheme="primary" size="lg" href="/signup">
-                  Sign Up
+                <ButtonLink colorScheme="secondary" size="lg" href="/signup">
+                  Get Started
                 </ButtonLink>
                 {/* <ButtonLink
                   size="lg"
@@ -152,11 +154,11 @@ const HeroSection: React.FC = () => {
             <FallInPlace delay={1}>
               <Box overflow="hidden" height="100%">
                 <Image
-                  src="/static/screenshots/list.png"
+                  src="/static/screenshots/best-landing.png"
                   layout="fixed"
                   width={1200}
                   height={762}
-                  alt="Screenshot of a ListPage in Saas UI Pro"
+                  alt="Screenshot of a Landing page"
                   quality="75"
                   priority
                 />
@@ -174,36 +176,36 @@ const HeroSection: React.FC = () => {
         pt="20"
         features={[
           {
-            title: "Accessible",
+            title: "Innovative Solutions",
             icon: FiSmile,
-            description: "All components strictly follow WAI-ARIA standards.",
+            description: "AWe blend creativity with the latest design trends to deliver standout results.",
             iconPosition: "left",
             delay: 0.6,
           },
           {
-            title: "Themable",
+            title: "Personalized Approach",
             icon: FiSliders,
             description:
-              "Fully customize all components to your brand with theme support and style props.",
+              " We listen to your needs and tailor our designs to meet your specific goals.",
             iconPosition: "left",
             delay: 0.8,
           },
           {
-            title: "Composable",
-            icon: FiGrid,
+            title: "Quality Assurance",
+            icon: FiClipboard,
             description:
-              "Compose components to fit your needs and mix them together to create new ones.",
+              "Our commitment to excellence ensures every project meets the highest standards.",
             iconPosition: "left",
             delay: 1,
           },
-          {
-            title: "Productive",
-            icon: FiThumbsUp,
-            description:
-              "Designed to reduce boilerplate and fully typed, build your product at speed.",
-            iconPosition: "left",
-            delay: 1.1,
-          },
+          // {
+          //   title: "Productive",
+          //   icon: FiThumbsUp,
+          //   description:
+          //     "Designed to reduce boilerplate and fully typed, build your product at speed.",
+          //   iconPosition: "left",
+          //   delay: 1.1,
+          // },
         ]}
         reveal={FallInPlace}
       />
@@ -216,16 +218,13 @@ const HighlightsSection = () => {
 
   return (
     <Highlights>
-      <HighlightsItem colSpan={[1, null, 2]} title="Core components">
+      <HighlightsItem colSpan={[1, null, 2]} title="Get Started with Us">
         <VStack alignItems="flex-start" spacing="8">
           <Text color="muted" fontSize="xl">
-            Get started for free with <Em>30+ open source components</Em>.
-            Including authentication screens with Clerk, Supabase and Magic.
-            Fully functional forms with React Hook Form. Data tables with React
-            Table.
+          Ready to transform your brand with cutting-edge design solutions? Contact us today to explore how we can help you achieve your vision.
           </Text>
 
-          <Flex
+          {/* <Flex
             rounded="full"
             borderWidth="1px"
             flexDirection="row"
@@ -253,14 +252,12 @@ const HighlightsSection = () => {
               isRound
               color="white"
             />
-          </Flex>
+          </Flex> */}
         </VStack>
       </HighlightsItem>
       <HighlightsItem title="Solid foundations">
         <Text color="muted" fontSize="lg">
-          We don&apos;t like to re-invent the wheel, neither should you. We
-          selected the most productive and established tools in the scene and
-          build Saas UI on top of it.
+        We believe in utilizing proven tools and frameworks to deliver exceptional results without reinventing the wheel. 
         </Text>
       </HighlightsItem>
       <HighlightsTestimonialItem
@@ -328,16 +325,16 @@ const FeaturesSection = () => {
           textAlign="left"
           as="p"
         >
+        
           Not your standard
-          <Br /> dashboard template.
+          <Br /> Design Service
         </Heading>
       }
       description={
         <>
-          Saas UI Pro includes everything you need to build modern frontends.
+          Motanya Vision Design offers more than just design solutions—
           <Br />
-          Use it as a template for your next product or foundation for your
-          design system.
+          experience a complete suite for building your brand's visual identity.
         </>
       }
       align="left"
@@ -345,70 +342,66 @@ const FeaturesSection = () => {
       iconSize={4}
       features={[
         {
-          title: "Components.",
+          title: "Comprehensive Components.",
           icon: FiBox,
           description:
-            "All premium components are available on a private NPM registery, no more copy pasting and always up-to-date.",
+            "Premium, always-up-to-date design elements integrated into a cohesive system.",
           variant: "inline",
         },
         {
           title: "Starterkits.",
           icon: FiLock,
           description:
-            "Example apps in Next.JS, Electron. Including authentication, billing, example pages, everything you need to get started FAST.",
+            "Example designs and templates for quick project initiation.",
           variant: "inline",
         },
         {
           title: "Documentation.",
           icon: FiSearch,
           description:
-            "Extensively documented, including storybooks, best practices, use-cases and examples.",
+            "Detailed guides, best practices, and use-cases for effective implementation.",
           variant: "inline",
         },
         {
-          title: "Onboarding.",
+          title: "Onboarding Solutions.",
           icon: FiUserPlus,
           description:
-            "Add user onboarding flows, like tours, hints and inline documentation without breaking a sweat.",
+            "Seamlessly add tours, hints, and inline documentation.",
           variant: "inline",
         },
         {
           title: "Feature flags.",
           icon: FiFlag,
           description:
-            "Implement feature toggles for your billing plans with easy to use hooks. Connect Flagsmith, or other remote config services once you're ready.",
+            "Manage and deploy feature toggles with ease.",
           variant: "inline",
         },
         {
-          title: "Upselling.",
+          title: "Upselling Components.",
           icon: FiTrendingUp,
           description:
-            "Components and hooks for upgrade flows designed to make upgrading inside your app frictionless.",
+            "Smooth upgrade flows for user transitions.",
           variant: "inline",
         },
         {
-          title: "Themes.",
+          title: "Themes & Customization.",
           icon: FiToggleLeft,
           description:
-            "Includes multiple themes with darkmode support, always have the perfect starting point for your next project.",
+            "Multiple themes, including dark mode, for perfect design fit.",
           variant: "inline",
         },
         {
-          title: "Generators.",
+          title: "Design Generators.",
           icon: FiTerminal,
           description:
-            "Extend your design system while maintaininig code quality and consistency with built-in generators.",
+            "Create and maintain consistent design elements effortlessly.",
           variant: "inline",
         },
         {
-          title: "Monorepo.",
+          title: "Modular Architecture.",
           icon: FiCode,
           description: (
-            <>
-              All code is available as packages in a high-performance{" "}
-              <Link href="https://turborepo.com">Turborepo</Link>, you have full
-              control to modify and adjust it to your workflow.
-            </>
+            "High-performance monorepo for flexible code integration."
           ),
           variant: "inline",
         },

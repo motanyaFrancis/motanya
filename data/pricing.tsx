@@ -6,10 +6,10 @@ export default {
     'Pay once and get life-time access to our high quality components.',
   plans: [
     {
-      id: 'oss',
-      title: 'Open Source',
-      description: 'Basic compoents, perfect to get started.',
-      price: 'Free',
+      id: 'Basic',
+      title: 'Basic',
+      description: 'Basic compoents, perfect for Entry-level users.',
+      price: '$6/month',
       features: [
         {
           title: 'MIT License',
@@ -38,10 +38,10 @@ export default {
       },
     },
     {
-      id: 'bootstrap',
-      title: 'Bootstrap',
-      description: 'Complete frontend stack for bootstrappers and small teams.',
-      price: 'Free',
+      id: 'Standard',
+      title: 'Standard',
+      description: 'Complete frontend stack for Mid-level Companies.',
+      price: '$29/month',
       isRecommended: true,
       features: [
         {
@@ -76,15 +76,15 @@ export default {
       },
     },
     {
-      id: 'startup',
-      title: 'Startup',
+      id: 'Premium',
+      title: 'Premium',
       description: 'Unlimited license for growing teams.',
       price: (
         <HStack>
           <Text textDecoration="line-through" fontSize="sm" color="gray.400">
-            €999,-
+            $150/month,-
           </Text>
-          <Text>€499,-</Text>
+          <Text>$99/month</Text>
         </HStack>
       ),
       features: [
