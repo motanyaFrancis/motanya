@@ -3,6 +3,7 @@ import { ReactNode } from 'react'
 
 import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav'
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 import { Header, HeaderProps } from './header'
 import {
@@ -29,6 +30,7 @@ export const Layout: React.FC<LayoutProps> = (props) => {
         <SkipNavContent />
         <SpeedInsights />
         {children}
+        <Analytics />
       </Box>
       <Footer {...footerProps} />
     </Box>
