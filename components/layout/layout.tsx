@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 
 import { SkipNavContent, SkipNavLink } from '@chakra-ui/skip-nav'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { Header, HeaderProps } from './header'
 import {
@@ -26,6 +27,7 @@ export const Layout: React.FC<LayoutProps> = (props) => {
       <Header {...headerProps} />
       <Box as="main">
         <SkipNavContent />
+        <SpeedInsights />
         {children}
       </Box>
       <Footer {...footerProps} />

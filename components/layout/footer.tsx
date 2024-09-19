@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = (props) => {
           <Stack spacing="8">
             <Stack alignItems="flex-start">
               <Flex>
-                <Box as={siteConfig.logo} flex="1" height="45px" ml="-15px"/>
+                <Box as={siteConfig.logo} flex="1" height="35px" ml="0"/>
               </Flex>
               <Text fontSize="md" color="muted">
                 {siteConfig.seo.description}
